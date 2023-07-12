@@ -21,6 +21,6 @@ RUN  mkdir /ansible && \
      echo 'localhost' > /etc/ansible/hosts
 
 WORKDIR /ansible
-COPY ansbile.cfg /ansible/
+COPY ansible.cfg /ansible/
 
 CMD  [ "ansible-playbook", "--version" ]
